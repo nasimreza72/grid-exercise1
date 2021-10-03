@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+}
+
+.rotate{
+    width: 100px;
+    height: 75px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.rotate .fas{
+    font-size: 4rem;
+    color: darkblue;
+}
+
+input{
+    visibility: hidden;
+}
+
+input:checked~main{
+     transform: rotate(90deg);
+     transition: 2s;
+ }
+
+
+main{
+    width: 820px;
+    height: 820px;
+    margin: auto;
+    background-image: linear-gradient(to right,rgb(100, 100, 100),rgb(255, 255, 255));
+    border-right: 1px solid rgba(202, 202, 202, 0.918);
+    display: flex;
+
+}
+
+.chess-board{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    border: 1px solid rgba(199, 199, 199);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;    
+}
+
+/* ++++++++++++fist line ++++++++++++++*/
+
+.line1{
+    width: 100%;
+    display: flex;
+}
+
+.line1 .row1:nth-child(odd){
+    background-color: black;
+}
+
+.chess-board .row1{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* ++++++++++++fist line end++++++++++++++*/
+
+/* ++++++++++++2nd line ++++++++++++++*/
+.line2{
+    width: 100%;
+    display: flex;
+}
+
+.line2 .row2:nth-child(even){
+    background-color: black;
+}
+
+.chess-board .row2{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/* ++++++++++++2nd line end ++++++++++++++*/
+
+/* ++++++++++++3rd line ++++++++++++++*/
+
+.line3{
+    width: 100%;
+    display: flex;
+}
+
+.line3 .row3:nth-child(odd){
+    background-color: black;
+}
+
+.chess-board .row3{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* ++++++++++++3rd line end++++++++++++++*/
+
+/* ++++++++++++4th line ++++++++++++++*/
+.line4{
+    width: 100%;
+    display: flex;
+}
+
+.line4 .row4:nth-child(even){
+    background-color: black;
+}
+
+.chess-board .row4{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/* ++++++++++++4th line end ++++++++++++++*/
+
+/* ++++++++++++5th line ++++++++++++++*/
+
+.line5{
+    width: 100%;
+    display: flex;
+}
+
+.line5 .row5:nth-child(odd){
+    background-color: black;
+}
+
+.chess-board .row5{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* ++++++++++++5th line end++++++++++++++*/
+
+/* ++++++++++++6th line ++++++++++++++*/
+.line6{
+    width: 100%;
+    display: flex;
+}
+
+.line6 .row6:nth-child(even){
+    background-color: black;
+}
+
+.chess-board .row6{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/* ++++++++++++6th line end ++++++++++++++*/
+
+/* ++++++++++++7th line ++++++++++++++*/
+
+.line7{
+    width: 100%;
+    display: flex;
+}
+
+.line7 .row7:nth-child(odd){
+    background-color: black;
+}
+
+.chess-board .row7{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* ++++++++++++7th line end++++++++++++++*/
+
+/* ++++++++++++8th line ++++++++++++++*/
+.line8{
+    width: 100%;
+    display: flex;
+}
+
+.line8 .row8:nth-child(even){
+    background-color: black;
+}
+
+.chess-board .row8{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/* ++++++++++++8th line end ++++++++++++++*/
+
+
+/* ++++++++++++++icon +++++++++++++++*/
+
+.fas{
+    width: 100%;
+    color: white;
+    text-shadow: 4px 3px 0px rgb(66, 26, 26), 19px 9px 2px rgba(0, 0, 0, 0.15);
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-75%);
+
+}
+
+.line7 .fas{
+    color: rgb(187, 30, 30);
+}
+
+.line8 .fas{
+    color: rgb(190, 30, 30);
+}
+
+.chess-board div div:hover{
+    border: 3px solid white;
+}
+
+/* ++++++++++++hover ++++++++++++++++*/
+
+.name1{
+    font-size: 2.6rem;
+    margin: auto;
+    color: white;
+    display: none;
+}
+
+.line6 :first-child:hover .name1{
+    display: block;
+    border: none;
+}
+
+.line6 :nth-child(2):hover .name1{
+    display: block;
+    border: none;
+}
+
+.line6 :nth-child(3):hover .name1{
+    display: block;
+    border: none;
+}
+
+.line6 :nth-child(4):hover .name1{
+    display: block;
+    border: none;
+}
+.line6 :nth-child(5):hover .name1{
+    display: block;
+    border: none;
+}
+
+.knight:hover{
+    position: relative;
+    bottom: 200px;
+    left: 100px;
+
+}
